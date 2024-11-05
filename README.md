@@ -2,7 +2,8 @@
 
 This repository is for the web app prototype, which I will gradually
 build while studying for _IBM Full-Stack JavaScript Developer
-Professional Certificate from [Coursera](https://www.coursera.org/)_.
+Professional Certificate_ from
+_[Coursera](https://www.coursera.org/)_.
 
 ## Requirements
 
@@ -21,9 +22,10 @@ Professional Certificate from [Coursera](https://www.coursera.org/)_.
 
 -   Later, however, certain components may be changed:
 
-    -   ReactJS will be removed to ensure a fully _vanilla_ frontend.
-    -   [Bulma](https://bulma.io/) will be used for styling.
-    -   MongoDB will be replaced with [SQLite](https://sqlite.org/) or
+    -   ReactJS may be replaced with [jQuery](https://jquery.com/) or
+        _vanilla_ JavaScript.
+    -   [Bulma](https://bulma.io/) may be used for styling.
+    -   MongoDB may be replaced with [SQLite](https://sqlite.org/) or
         [PostgreSQL](https://www.postgresql.org/)
 
 ### Structure
