@@ -8,8 +8,8 @@ Professional Certificate from [Coursera](https://www.coursera.org/)_.
 
 ### Tech Stacks
 
--   At the beginning, this project will be developed **only** with the
-    technologies covered in the certificate course:
+-   Initially, this project will use only the technologies covered in
+    the certificate course:
 
     -   HTML
     -   CSS
@@ -19,16 +19,16 @@ Professional Certificate from [Coursera](https://www.coursera.org/)_.
     -   [ExpressJS](https://expressjs.com/)
     -   [MongoDB](https://www.mongodb.com/)
 
--   Later, however, some of them may be replaced by the following
-    alternatives:
+-   Later, however, certain components may be changed:
 
-    -   [Bulma](https://bulma.io/)
-    -   [SQLite](https://sqlite.org/) or
+    -   ReactJS will be removed to ensure a fully _vanilla_ frontend.
+    -   [Bulma](https://bulma.io/) will be used for styling.
+    -   MongoDB will be replaced with [SQLite](https://sqlite.org/) or
         [PostgreSQL](https://www.postgresql.org/)
 
 ### Structure
 
--   The basic structure will be similar to that of a typical blogging
+-   The basic structure will be similar to a typical blogging
     platform.
 
 -   The final product will be like a simple CMS.
@@ -37,23 +37,29 @@ Professional Certificate from [Coursera](https://www.coursera.org/)_.
 
 -   There will be multiple users.
 
--   Users will be added from the backend.
+-   Users will be added from the backend. (There will be no frontend
+    UI for user registration.)
 
 -   All the user information will be stored in the database.
 
 ### Writing & Reading
 
--   All the posts will be stored in the database under each username.
+-   All the posts will be stored in the database table under each
+    username.
 
--   A post will be dynamically fetched from the database to be
-    displayed on a web page.
+-   When reading a post, the contents will be dynamically fetched from
+    the database to be displayed on a web page. (The page will be a
+    fixed HTML template and only the contents will be dynamically
+    rendered.)
 
--   Writing a post will be done from the frontend.
+-   Reading a post will not require authentication.
+
+-   Writing a post will be done from the frontend and the content will
+    be sent to the database. (There will be a frontend UI for writing
+    a post.)
 
 -   Writing a post will require username and password to access the
     database.
-
--   Reading a post will not require authentication.
 
 ### Images
 
@@ -62,12 +68,12 @@ Professional Certificate from [Coursera](https://www.coursera.org/)_.
 -   All the images will be stored in separate directories named after
     each username & post. (Ex: `/images/username/postname/01.jpg`)
 
--   When a post is fetched from the database, the corresponding images
-    will also be fetched from the directory.
+-   When a post is fetched from the database, its corresponding images
+    will also be retrieved from the directory.
 
 ## Notes
 
 -   This is just the initial concept and will be modified as I
     continue studying.
 
--   It will be a fairly long journey!
+-   It will be a long journey!
