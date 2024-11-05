@@ -22,8 +22,7 @@ _[Coursera](https://www.coursera.org/)_.
 
 -   Later, however, certain components may be changed:
 
-    -   ReactJS may be replaced with [jQuery](https://jquery.com/) or
-        _vanilla_ JavaScript.
+    -   ReactJS may be replaced with _vanilla_ JavaScript.
     -   [Bulma](https://bulma.io/) may be used for styling.
     -   MongoDB may be replaced with [SQLite](https://sqlite.org/) or
         [PostgreSQL](https://www.postgresql.org/)
