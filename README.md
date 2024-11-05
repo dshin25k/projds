@@ -8,8 +8,8 @@ Professional Certificate from [Coursera](https://www.coursera.org/)_.
 
 ### Tech Stacks
 
--   Initially, this project will use only the technologies covered in
-    the certificate course:
+-   Initially, this project will use **only** the technologies covered
+    in the certificate course:
 
     -   HTML
     -   CSS
@@ -31,7 +31,7 @@ Professional Certificate from [Coursera](https://www.coursera.org/)_.
 -   The basic structure will be similar to a typical blogging
     platform.
 
--   The final product will be like a simple CMS.
+-   In the end, the final product will be like a simple CMS.
 
 ### User Management
 
@@ -47,9 +47,9 @@ Professional Certificate from [Coursera](https://www.coursera.org/)_.
 -   All the posts will be stored in the database table under each
     username.
 
--   When reading a post, the contents will be dynamically fetched from
+-   When reading a post, the content will be dynamically fetched from
     the database to be displayed on a web page. (The page will be a
-    fixed HTML template and only the contents will be dynamically
+    fixed HTML template and only the content will be dynamically
     rendered.)
 
 -   Reading a post will not require authentication.
@@ -66,7 +66,7 @@ Professional Certificate from [Coursera](https://www.coursera.org/)_.
 -   When writing a post, images may be inserted.
 
 -   All the images will be stored in separate directories named after
-    each username & post. (Ex: `/images/username/postname/01.jpg`)
+    each username & postname. (Ex: `/images/username/postname/01.jpg`)
 
 -   When a post is fetched from the database, its corresponding images
     will also be retrieved from the directory.
