@@ -9,22 +9,18 @@ _[Coursera](https://www.coursera.org/)_.
 
 ### Tech Stacks
 
--   Initially, this project will use **only** the technologies covered
-    in the certificate course:
+-   This project will loosely follow the certificate program but some
+    technologies may be added, removed, or replaced.
+
+-   The following stacks will be used for this project:
 
     -   HTML
     -   CSS
     -   JavaScript
-    -   [ReactJS](https://react.dev/)
+    -   [Bulma](https://bulma.io/)
     -   [NodeJS](https://nodejs.org/)
     -   [ExpressJS](https://expressjs.com/)
-    -   [MongoDB](https://www.mongodb.com/)
-
--   Later, however, certain components will be changed:
-
-    -   ReactJS will be replaced with _vanilla_ JavaScript.
-    -   [Bulma](https://bulma.io/) will be added for styling.
-    -   MongoDB will be replaced with [SQLite](https://sqlite.org/) or
+    -   [SQLite](https://sqlite.org/) or
         [PostgreSQL](https://www.postgresql.org/)
 
 ### Structure
