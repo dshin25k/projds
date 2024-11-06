@@ -24,7 +24,7 @@ _[Coursera](https://www.coursera.org/)_.
 
     -   ReactJS will be replaced with _vanilla_ JavaScript.
     -   [Bulma](https://bulma.io/) will be added for styling.
-    -   MongoDB may be replaced with [SQLite](https://sqlite.org/) or
+    -   MongoDB will be replaced with [SQLite](https://sqlite.org/) or
         [PostgreSQL](https://www.postgresql.org/)
 
 ### Structure
