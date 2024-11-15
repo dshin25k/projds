@@ -9,7 +9,7 @@ _[Coursera](https://www.coursera.org/)_.
 
 ### Tech Stacks
 
--   This project will loosely follow the certificate program but some
+-   This project will loosely tied to the certificate courses but some
     technologies may be added, removed, or replaced.
 
 -   The following stacks will be used for this project:
@@ -20,40 +20,56 @@ _[Coursera](https://www.coursera.org/)_.
     -   [Bulma](https://bulma.io/)
     -   [NodeJS](https://nodejs.org/)
     -   [ExpressJS](https://expressjs.com/)
-    -   [SQLite](https://sqlite.org/) or
-        [PostgreSQL](https://www.postgresql.org/)
+    -   [PostgreSQL](https://www.postgresql.org/)
 
 ### Structure
 
 -   The basic structure will be similar to a typical blogging
-    platform.
+    platform. In the end, the final product will be like a simple CMS.
 
--   In the end, the final product will be like a simple CMS.
+-   All the operations will be done from the frontend. (Ex: Managing
+    users & wrting posts)
 
 ### User Management
 
 -   There will be multiple users.
 
--   Users will be added from the backend. (There will be no frontend
-    UI for user registration.)
+-   All the user information will be stored in the database. Each user
+    will take one row of `users` table, which stores user information
+    and passwords. (Encryption may be needed.)
 
--   All the user information will be stored in the database.
+-   `admin` user will have a privilege to add, modify, or delete a row
+    of `users` table. Each user will be able to modify or delete his
+    or her own row of `users` table.
 
-### Writing & Reading
+-   There should be a method to ensure unique usernames.
 
--   All the posts will be stored in the database table under each
-    username.
+-   When adding a user, a table named after the username will be
+    created. When deleting a user, the table under that username will
+    be deleted.
+
+-   All the manipulations on `users` table will require username and
+    password authentication.
+
+### Writing & Reading Posts
+
+-   All the posts a user writes will be stored in the database. Each
+    post will take one row of `posts` table, which stores headers and
+    contents.
+
+-   A `tag` column will be added to `posts` table to enable searching
+    by tags.
 
 -   When reading a post, the content will be dynamically fetched from
     the database to be displayed on a web page. (The page will be a
-    fixed HTML template and only the content will be dynamically
-    rendered.)
+    kind of fixed HTML template and only the content will be
+    dynamically rendered.)
 
 -   Reading a post will not require authentication.
 
--   Writing a post will be done from the frontend and the content will
-    be sent to the database. (There will be a frontend UI for writing
-    a post.)
+-   When wrting a post, not the whole page but the content will be
+    stored in the database so that it can be fetched and rendered when
+    needed.
 
 -   Writing a post will require username and password to access the
     database.
@@ -62,11 +78,20 @@ _[Coursera](https://www.coursera.org/)_.
 
 -   When writing a post, images may be inserted.
 
--   All the images will be stored in separate directories named after
-    each username & postname. (Ex: `/images/username/postname/01.jpg`)
+-   When uploaded, an image will be renamed according to the naming
+    convention of `date` followed by `letter suffix` and will be
+    stored in a separate directory named after each username. (Ex:
+    `/images/dshin/20241115a.jpg`)
+
+-   There should be a method to ensure unique image names.
 
 -   When a post is fetched from the database, its corresponding images
     will also be retrieved from the directory.
+
+### Error Handling
+
+-   Error handling method should be implemented in case of, for
+    example, invalid inputs or missing resources.
 
 ## Notes
 
