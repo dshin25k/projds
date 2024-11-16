@@ -22,13 +22,16 @@ _[Coursera](https://www.coursera.org/)_.
     -   [ExpressJS](https://expressjs.com/)
     -   [PostgreSQL](https://www.postgresql.org/)
 
-### Structure
+### General
 
 -   The basic structure will be similar to a typical blogging
     platform. In the end, the final product will be like a simple CMS.
 
 -   All the operations will be done from the frontend. (Ex: Managing
-    users & wrting posts)
+    users & writing posts)
+
+-   The interface language will be English but the contents may be in
+    any language.
 
 ### User Management
 
@@ -57,8 +60,9 @@ _[Coursera](https://www.coursera.org/)_.
     post will take one row of `posts` table, which stores headers and
     contents.
 
--   A `tag` column will be added to `posts` table to enable searching
-    by tags.
+-   `tags` column will be added to `posts` table to enable searching
+    by tags. `tags` column will have array data type so that it can
+    store multiple tags per post.
 
 -   When reading a post, the content will be dynamically fetched from
     the database to be displayed on a web page. (The page will be a
@@ -67,7 +71,7 @@ _[Coursera](https://www.coursera.org/)_.
 
 -   Reading a post will not require authentication.
 
--   When wrting a post, not the whole page but the content will be
+-   When writing a post, not the whole page but the content will be
     stored in the database so that it can be fetched and rendered when
     needed.
 
