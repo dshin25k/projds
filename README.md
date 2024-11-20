@@ -7,12 +7,12 @@ _[Coursera](https://www.coursera.org/)_.
 
 ## Requirements
 
-### Tech Stacks
+### Tech Stack
 
 -   This project will loosely tied to the certificate courses but some
     technologies may be added, removed, or replaced.
 
--   The following stacks will be used for this project:
+-   The following technologies  will be used for this project:
 
     -   HTML
     -   CSS
