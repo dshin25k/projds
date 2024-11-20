@@ -12,7 +12,8 @@ _[Coursera](https://www.coursera.org/)_.
 -   This project will loosely tied to the certificate courses but some
     technologies may be added, removed, or replaced.
 
--   The following technologies  will be used for this project:
+-   Based on PERN stack, the following technologies will be used for
+    this project:
 
     -   HTML
     -   CSS
