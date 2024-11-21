@@ -35,13 +35,13 @@ _[Coursera](https://www.coursera.org/)_.
 -   The interface language will be English but the contents may be in
     any language.
 
-### User Management
+### Users
 
 -   There will be multiple users.
 
 -   All the user information will be stored in the database. Each user
     will take one row of `users` table, which stores user information
-    and passwords. (Encryption may be needed.)
+    and hashed passwords.
 
 -   `admin` user will have a privilege to add, modify, or delete a row
     of `users` table. Each user will be able to modify or delete his
@@ -49,14 +49,32 @@ _[Coursera](https://www.coursera.org/)_.
 
 -   There should be a method to ensure unique usernames.
 
--   When adding a user, a table named after the username will be
-    created. When deleting a user, the table under that username will
-    be deleted.
-
 -   All the manipulations on `users` table will require username and
     password authentication.
 
-### Writing & Reading Posts
+### Authentication
+
+-   Authentication will be implemented and performed per each
+    sensitive action. (Login feature will not be necessary since only
+    a few actions will require authentication.)
+
+-   For example, when a user attempts an action requiring
+    authentication, he or she will have to enter his or her username &
+    password per each action.
+
+-   Once entered, the password will be hashed by a password hashing
+    tool like [OpenSSL](https://www.openssl.org/) or
+    [bcrypt](https://github.com/kelektiv/node.bcrypt.js/). Then, the
+    hashed password will be compared with the corresponding password
+    data (also hashed) stored in `users` table.
+
+-   The action will be performed only when the hashed password matches
+    the corresponding password data in `users` table.
+
+-   All communications between the client and server will be encrypted
+    using `HTTPS` for password security.
+
+### Posts
 
 -   All the posts a user writes will be stored in the database. Each
     post will take one row of `posts` table, which stores headers and
@@ -73,12 +91,10 @@ _[Coursera](https://www.coursera.org/)_.
 
 -   Reading a post will not require authentication.
 
--   When writing a post, not the whole page but the content will be
-    stored in the database so that it can be fetched and rendered when
-    needed.
+-   When writing/ editing/ deleting a post, the corresponding row in
+    `posts` table will be added/ updated/ deleted.
 
--   Writing a post will require username and password to access the
-    database.
+-   Writing/ editing/ deleting a post will require authentication.
 
 ### Images
 
