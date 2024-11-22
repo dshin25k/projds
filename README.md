@@ -39,15 +39,23 @@ _[Coursera](https://www.coursera.org/)_.
 
 -   There will be multiple users.
 
+-   A username will consist of alphanumeric characters only, with the
+    length of 4 to 8 characters.
+
 -   All the user information will be stored in the database. Each user
     will take one row of `users` table, which stores user information
     and hashed passwords.
+
+-   `users` table will have a `rowid` column created with
+    `GENERATED ALWAYS AS IDENTITY` clause to assign a unique identity
+    per each row.
 
 -   `admin` user will have a privilege to add, modify, or delete a row
     of `users` table. Each user will be able to modify or delete his
     or her own row of `users` table.
 
--   There should be a method to ensure unique usernames.
+-   To make sure that each username is unique, `UNIQUE` constraint
+    will be used when create `username` column in `users` table.
 
 -   All the manipulations on `users` table will require username and
     password authentication.
@@ -80,6 +88,10 @@ _[Coursera](https://www.coursera.org/)_.
     post will take one row of `posts` table, which stores headers and
     contents.
 
+-   `posts` table will have a `rowid` column created with
+    `GENERATED ALWAYS AS IDENTITY` clause to assign a unique identity
+    per each row.
+
 -   `tags` column will be added to `posts` table to enable searching
     by tags. `tags` column will have array data type so that it can
     store multiple tags per post.
@@ -98,22 +110,28 @@ _[Coursera](https://www.coursera.org/)_.
 
 ### Images
 
--   When writing a post, images may be inserted.
+-   When writing or editing a post, maximum 2 images may be inserted.
+    The images will be located at the top and/or at the bottom of the
+    page. There will be 2 different upload slots, which will determine
+    the image location (top & bottom) and the renamed image filename.
 
--   When uploaded, an image will be renamed according to the naming
-    convention of `date` followed by `letter suffix` and will be
-    stored in a separate directory named after each username. (Ex:
-    `/images/dshin/20241115a.jpg`)
+-   Only the images in `.jpg` format with the size under 1 MB will be
+    accepted.
 
--   There should be a method to ensure unique image names.
+-   When uploaded, an image will be renamed according to the
+    predefined naming convention: `rowid` of the corresponding row in
+    `posts` table + `t` or `b` indicating top or bottom location. The
+    renamed image will be stored in a separate directory named after
+    each username. (Ex: `/images/dshin/25a.jpg`) This is to ensure
+    unique image names.
 
 -   When a post is fetched from the database, its corresponding images
     will also be retrieved from the directory.
 
-### Error Handling
+### Errors
 
--   Error handling method should be implemented in case of, for
-    example, invalid inputs or missing resources.
+-   Error handling method should be implemented for any unsuccessful
+    actions, such as invalid inputs or missing files.
 
 ## Notes
 
