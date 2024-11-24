@@ -113,7 +113,7 @@ _[Coursera](https://www.coursera.org/)_.
 -   When writing or editing a post, maximum 2 images may be inserted.
     The images will be located at the top and/or at the bottom of the
     page. There will be 2 different upload slots, which will determine
-    the image location (top & bottom) and the renamed image filename.
+    the image location (top & bottom) and the image filename.
 
 -   Only the images in `.jpg` format with the size under 1 MB will be
     accepted.
@@ -124,6 +124,8 @@ _[Coursera](https://www.coursera.org/)_.
     renamed image will be stored in a separate directory named after
     each username. (Ex: `/images/dshin/25a.jpg`) This is to ensure
     unique image names.
+
+-   `posts` table will store only the _path_ of images.
 
 -   When a post is fetched from the database, its corresponding images
     will also be retrieved from the directory.
