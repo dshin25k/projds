@@ -111,7 +111,7 @@ _[Coursera](https://www.coursera.org/)_.
 ### Images
 
 -   When writing or editing a post, only 1 image may be inserted. The
-    images will be located at the top of the page.
+    image will be located at the top of the page.
 
 -   Only the images in `.jpg` format with the size under 1 MB will be
     accepted.
@@ -123,7 +123,7 @@ _[Coursera](https://www.coursera.org/)_.
 
 -   `posts` table will store only the _path_ of images.
 
--   When a post is fetched from the database, its corresponding images
+-   When a post is fetched from the database, its corresponding image
     will also be retrieved from the directory.
 
 ### Errors
