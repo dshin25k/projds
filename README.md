@@ -110,20 +110,16 @@ _[Coursera](https://www.coursera.org/)_.
 
 ### Images
 
--   When writing or editing a post, maximum 2 images may be inserted.
-    The images will be located at the top and/or at the bottom of the
-    page. There will be 2 different upload slots, which will determine
-    the image location (top & bottom) and the image filename.
+-   When writing or editing a post, only 1 image may be inserted. The
+    images will be located at the top of the page.
 
 -   Only the images in `.jpg` format with the size under 1 MB will be
     accepted.
 
--   When uploaded, an image will be renamed according to the
-    predefined naming convention: `rowid` of the corresponding row in
-    `posts` table + `t` or `b` indicating top or bottom location. The
-    renamed image will be stored in a separate directory named after
-    each username. (Ex: `/images/dshin/25a.jpg`) This is to ensure
-    unique image names.
+-   When uploaded, the image will be renamed after `rowid` value of
+    the corresponding row in `posts` table. The renamed image will be
+    stored in a separate directory named after each username. (Ex:
+    `/images/dshin/250.jpg`) This is to ensure unique image names.
 
 -   `posts` table will store only the _path_ of images.
 
